@@ -11099,6 +11099,23 @@ a.text-dark:focus {
 
 #commentsWithSpecificTag .comments .specific_comment {
   padding: 0.25rem 1rem 0.25rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#commentsWithSpecificTag .comments .specific_comment p {
+  width: 80%;
+}
+
+#commentsWithSpecificTag .comments .specific_comment div {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgba(142, 142, 142, 0.8);
+  text-transform: uppercase;
+  font-size: 0.6rem;
 }
 
 #commentsWithSpecificTag .comments .no_specific_comment {

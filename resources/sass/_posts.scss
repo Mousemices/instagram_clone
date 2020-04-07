@@ -189,6 +189,21 @@
         }
         .specific_comment{
             padding: 0.25rem 1rem 0.25rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            p{
+                width: 80%;
+            }
+            div{
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: rgba(142, 142, 142, 0.8);
+                text-transform: uppercase;
+                font-size: 0.6rem;
+            }
         }
         .no_specific_comment{
             padding: 0.25rem 1rem 0.25rem 1rem;

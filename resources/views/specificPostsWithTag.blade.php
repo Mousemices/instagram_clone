@@ -116,7 +116,11 @@
             @forelse($comments as $comment)
                 <div class="specific_comment">
                     <p> <span><strong>{{ $comment->user->name }}</strong></span> : {{ $comment->description }}</p>
+                    <div class="user_comment2">
+                        <span class="date">{{ $comment->created_at }}</span>
+                    </div>
                 </div>
+
                 @empty
                 <div class="no_specific_comment">
                     <p>No comment with <span><strong>{{ $tagName }}</strong></span></p>
