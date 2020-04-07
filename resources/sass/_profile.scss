@@ -1,0 +1,43 @@
+#user_post{
+    padding: 1rem;
+    .post_title{
+        font-size: 1.5rem;
+
+    }
+    span{
+        font-weight: bold;
+    }
+}
+.single_post{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 30vh;
+    .delete_post{
+        width: 50%;
+        padding: 1rem;
+        button{
+            border:none;
+            background: white;
+            .delete_button{
+                color: red;
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .post_img{
+        width: 40%;
+        height: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+    }
+
+
+}

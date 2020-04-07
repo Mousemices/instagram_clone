@@ -1,0 +1,198 @@
+.user_icon{
+    font-size: 1.5rem;
+}
+
+.nav{
+    z-index: 2;
+    background-color: white;
+}
+
+#content{
+    position: relative;
+    width: 80%;
+    margin: 5rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    max-width: 935px;
+    .posts{
+        width: 70%;
+        .post{
+            width: 100%;
+            border: 1px solid #DBDBDB;
+            border-radius: 0.25rem;
+            margin-bottom: 5rem;
+            .post_title{
+                display: flex;
+                justify-content: space-between;
+                .post_owner{
+                    width: 80%;
+                    padding: 1rem 0 0.2rem 1rem;
+                }
+                .delete_post_form{
+                    width: 10%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .post_form{
+                        button{
+                            border:none;
+                            background: white;
+                            .delete_post_button{
+                                color: red;
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .post_img{
+                height: auto;
+                width: 100%;
+                border-top: 1px solid #DBDBDB;
+                border-bottom: 1px solid #DBDBDB;
+                img{
+                    width: 100%;
+                    height: inherit;
+                    object-fit: contain;
+                }
+            }
+            .post_description{
+                border-bottom: 1px solid #efefef;
+                .date{
+                    font-size: 0.7rem;
+                    padding: 0.5rem 0 0 1rem;
+                    color: rgba(142,142,142,0.9);
+                    text-transform: uppercase;
+                }
+                .author{
+                    padding: 0.5rem 0 0.2rem 1rem;
+                }
+                .post_author{
+                    color: $black;
+                    font-weight: bold;
+                }
+            }
+            .post_comment{
+                .commentForm{
+                    display: flex;
+                }
+                input[type="text"] {
+                    flex: 10;
+                    padding: 15px;
+                    border: none;
+                }
+                input[type="submit"]{
+                    flex:2 ;
+                    border: none;
+                    color: #0095F6;
+                    font-weight: bold;
+                    background: white;
+
+                }
+            }
+
+            .comments{
+                .user_who_comment{
+                    color: $black;
+                    width: 100%;
+                    padding: 0.2rem 0 0.2rem 1rem;
+                    margin: 0;
+                    display: flex;
+                    justify-content: space-between;
+                    .user_comment1{
+                        width: 75%;
+                        .delete_comment_form{
+                            display: inline-block;
+                            button{
+                                border: none;
+                                background: white;
+                                .remove_comment{
+                                    color: #F05340;
+                                }
+                            }
+                        }
+                        .user_comment{
+                            display: inline-block;
+                            color: black;
+                            font-weight: bold;
+                        }
+                    }
+                    .user_comment2{
+                        width: 15%;
+                    }
+
+                    .date{
+                        font-size: 0.6rem;
+                        padding: 0.5rem 0 0 1rem;
+                        color: rgba(142,142,142,0.8);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .tags{
+        position: fixed;
+        width: 20%;
+        right: 10%;
+
+        .current_user{
+            border: 1px solid #DBDBDB;
+            border-radius: 0.25rem;
+            margin: 1rem 0;
+            padding: 1rem 0.5rem;
+            .user_name{
+                font-weight: bold;
+            }
+            .user_mail{
+                color: rgba(142,142,142,0.9);;
+            }
+        }
+
+        .tag{
+            margin-top: 2rem;
+            border: 1px solid #DBDBDB;
+            border-radius: 0.25rem;
+            .tag_title{
+                padding: 1rem 0.5rem;
+                h4{
+                    color: #8e8e8e;
+                    font-weight: bold;
+                }
+            }
+            .tag_link{
+                display: flex;
+                flex-wrap: wrap;
+                a{
+                    padding-left: 0.5rem;
+                    padding-bottom: 0.4rem;
+                    padding-right: 1rem;
+                }
+            }
+        }
+    }
+
+}
+#commentsWithSpecificTag{
+    width: 80%;
+    margin:0 auto;
+    max-width: 935px;
+    .comments{
+        width: 70%;
+        border: 1px solid #DBDBDB;
+        h4{
+            padding: 1rem;
+            border-bottom: 1px solid #DBDBDB;
+        }
+        .specific_comment{
+            padding: 0.25rem 1rem 0.25rem 1rem;
+        }
+        .no_specific_comment{
+            padding: 0.25rem 1rem 0.25rem 1rem;
+        }
+
+    }
+}
