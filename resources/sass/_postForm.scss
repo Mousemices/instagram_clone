@@ -1,0 +1,29 @@
+#post_form_create{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .post_form_store{
+        width: 60%;
+        padding: 3rem;
+        border: 1px solid #DBDBDB;
+        border-radius: 0.25rem;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        input, label{
+            padding:0.5rem 0 0.5rem 0.5rem;
+        }
+        .button{
+            margin: 1rem 0;
+            color: #fff;
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .button:hover{
+            border-color: #0062cc;
+        }
+    }
+}

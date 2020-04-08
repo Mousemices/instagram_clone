@@ -1,5 +1,7 @@
 #user_post{
     padding: 1rem;
+    border-bottom: 1px solid #DBDBDB;
+    margin-bottom: 1rem;
     .post_title{
         font-size: 1.5rem;
 
@@ -8,6 +10,7 @@
         font-weight: bold;
     }
 }
+
 .single_post{
     display: flex;
     justify-content: space-between;

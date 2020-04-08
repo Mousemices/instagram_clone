@@ -115,7 +115,18 @@
             <h4>Comments with <strong>{{ $tagName }}</strong></h4>
             @forelse($comments as $comment)
                 <div class="specific_comment">
-                    <p> <span><strong>{{ $comment->user->name }}</strong></span> : {{ $comment->description }}</p>
+                    @auth
+                        @can('adminOrOwner', $comment)
+                            <form action="{{ route('comment.delete', $comment) }}" method="post" class="delete_comment_form">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit">
+                                    <i class="fas fa-times remove_comment"></i>
+                                </button>
+                            </form>
+                        @endcan
+                    @endauth
+                    <p><span><strong>{{ $comment->user->name }}</strong></span> : {{ $comment->description }}</p>
                     <div class="user_comment2">
                         <span class="date">{{ $comment->created_at }}</span>
                     </div>

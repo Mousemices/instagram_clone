@@ -11103,6 +11103,19 @@ a.text-dark:focus {
   justify-content: space-between;
 }
 
+#commentsWithSpecificTag .comments .specific_comment .delete_comment_form {
+  display: inline-block;
+}
+
+#commentsWithSpecificTag .comments .specific_comment .delete_comment_form button {
+  border: none;
+  background: white;
+}
+
+#commentsWithSpecificTag .comments .specific_comment .delete_comment_form button .remove_comment {
+  color: #F05340;
+}
+
 #commentsWithSpecificTag .comments .specific_comment p {
   width: 80%;
 }
@@ -11124,6 +11137,8 @@ a.text-dark:focus {
 
 #user_post {
   padding: 1rem;
+  border-bottom: 1px solid #DBDBDB;
+  margin-bottom: 1rem;
 }
 
 #user_post .post_title {
@@ -11168,5 +11183,40 @@ a.text-dark:focus {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+#post_form_create {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#post_form_create .post_form_store {
+  width: 60%;
+  padding: 3rem;
+  border: 1px solid #DBDBDB;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+#post_form_create .post_form_store input,
+#post_form_create .post_form_store label {
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
+
+#post_form_create .post_form_store .button {
+  margin: 1rem 0;
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+#post_form_create .post_form_store .button:hover {
+  border-color: #0062cc;
 }
 

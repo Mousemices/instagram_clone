@@ -1,19 +1,20 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="m-2">
-                    <button class="btn">
+                    <button class="btn border-info">
                         <a href="{{route('post.create')}}">Create Post</a>
                     </button>
                 </div>
-                <div class="card-header">Profile</div>
+                <div class="card-header font-weight-bolder">
+                    <i class="fas fa-user pr-2"></i>Profile</div>
                 @auth
-                    <p class="p-2">{{Auth::user()->name}}</p>
-                    <p class="p-2">{{Auth::user()->email}}</p>
+                    <p class="pl-3 pt-2 font-weight-bold">{{Auth::user()->name}}</p>
+                    <p class="pl-3 pt-2 font-weight-bold">{{Auth::user()->email}}</p>
                 @endauth
             </div>
         </div>
@@ -22,7 +23,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div id="user_post">
-                    <i class="fas fa-table post_title"></i><span> Posts</span>
+                    <i class="fas fa-table post_title pr-2 border-bottom"></i><span>Posts</span>
                 </div>
 
                 <div class="single_post">
@@ -44,7 +45,7 @@
                         </div>
 
                     @empty
-                        <p>Currently 0 post</p>
+                        <p class="pt-2 pl-3 text-uppercase">----------Currently 0 post-----------</p>
                     @endforelse
                 </div>
             </div>
